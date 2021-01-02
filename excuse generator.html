@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXCUSE GENERATOR</title>
+</head>
+<p><h1><b>EXCUSE GENERATOR</b></h1></p>
+
+
+<body style="background-color: chartreuse;">
+    <div>
+        Didn't submit assignment on time?...
+        Don't worry we have lot of excuses that will be surely help you.
+    </div>
+    <br>
+    <br>
+    
+    <button>
+        "just click on excuse button"
+    </button>
+    <div id="ctr">
+        <button id="btn" onclick="Excuse()">Excuse</button>
+    </div>
+    <style>
+        
+    #btn{
+   background-color: rgba(240, 9, 9, 0.911);    
+  align-items: center;
+  height: 40px;
+  border: 2px solid rgb(195, 14, 219); 
+  }
+  #ctr{
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  }
+  
+    </style>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <script>
+        function Excuse()
+{
+    var exc=['my Laptop was not working'  ,
+    'poor network connection','guest came',
+    'i did not get the idea','i was sick']
+    var sen = exc[Math.round(Math.random()*(exc.length-2))];
+    document.getElementById('exc').innerHTML=sen ; 
+    
+}
+    </script>
+    <div id="exc">...</div>
+    
+</body>
+</html>
+
+
